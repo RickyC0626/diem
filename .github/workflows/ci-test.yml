@@ -791,6 +791,7 @@ jobs:
           cd /opt/git/diem/crypto/crypto
           cargo test --features='u64' --no-default-features
           cargo test --features='u32' --no-default-features
+          exit 1
       - uses: ./.github/actions/build-teardown
 
   helm-test:
